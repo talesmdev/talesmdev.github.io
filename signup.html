@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> INFINITECRED :: Sign up</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N8ZNRQ9');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Core CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8ZNRQ9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="infinite-app" class="app-wrapper">
+
+        <!--Full pageloader-->
+        <!-- Pageloader -->
+        <div class="pageloader is-full"></div>
+        <div class="infraloader is-full is-active"></div>
+        <div class="auth-wrapper">
+            <!--Page body-->
+
+            <div class="signup-nav">
+                <div class="signup-nav-inner">
+                    <a href="./dashboard.html" class="logo">
+                        <img class="light-image" src="assets/img/logos/logo.svg" alt="">
+                        <img class="dark-image" src="assets/img/logos/logo/logo-light.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div id="infinite-signup" class="signup-wrapper">
+
+                <div class="signup-steps is-hidden">
+                    <div class="steps-container">
+                        <!--div class="step-icon is-active" data-progress="10" data-step="signup-step-1">
+                                    <div class="inner">
+                                        <i data-feather="home"></i>
+                                    </div>
+                                    <span class="step-label">Sign up</span>
+                                </div-->
+                        <div class="step-icon is-active" data-progress="23" data-step="signup-step-2">
+                            <div class="inner">
+                                <i data-feather="user"></i>
+                            </div>
+                            <span class="step-label">Foto de perfil</span>
+                        </div>
+                        <div class="step-icon is-inactive" data-progress="75" data-step="signup-step-3">
+                            <div class="inner">
+                                <i data-feather="shield"></i>
+                            </div>
+                            <span class="step-label">Dados da Conta</span>
+                        </div>
+                        <div class="step-icon is-inactive" data-progress="98">
+                            <div class="inner">
+                                <i data-feather="check"></i>
+                            </div>
+                            <span class="step-label">Concluído</span>
+                        </div>
+                        <progress id="signup-steps-progress" class="progress" value="25" max="100">25%</progress>
+                    </div>
+                </div>
+
+                <img class="card-bg" src="assets/img/bg/signup/infinite-signup.png" alt="">
+
+                <div class="hero is-fullheight">
+                    <div class="hero-body">
+                        <div class="container">
+                            <!-- Step 1 -->
+                            <div id="signup-step-1" class="columns signup-columns">
+                                <div class="column is-4 is-offset-1">
+                                    <h1 id="main-signup-title" class="title is-3 signup-title">Olá, você foi indicado
+                                        por Fulano
+                                    </h1>
+                                    <h2 id="main-signup-subtitle" class="subtitle signup-subtitle">Limpe seu nome,
+                                        transforme seu futuro: reconquiste sua liberdade financeira!</h2>
+                                    <div class="signup-card">
+                                        <form id="signup-form" class="signup-form is-mobile-spaced">
+                                            <div class="columns is-multiline">
+                                                <div class="column is-6">
+                                                    <div class="control has-validation">
+                                                        <input type="text" class="input">
+                                                        <small class="error-text">Este é um campo obrigatório</small>
+                                                        <div class="auth-label">Nome</div>
+                                                        <div class="validation-icon is-success">
+                                                            <div class="icon-wrapper">
+                                                                <i data-feather="check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="validation-icon is-error">
+                                                            <div class="icon-wrapper">
+                                                                <i data-feather="x"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-6">
+                                                    <div class="control has-validation">
+                                                        <input type="text" class="input">
+                                                        <small class="error-text">Este é um campo obrigatório</small>
+                                                        <div class="auth-label">Sobrenome</div>
+                                                        <div class="validation-icon is-success">
+                                                            <div class="icon-wrapper">
+                                                                <i data-feather="check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="validation-icon is-error">
+                                                            <div class="icon-wrapper">
+                                                                <i data-feather="x"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-12">
+                                                    <div class="control has-validation">
+                                                        <input type="text" class="input">
+                                                        <small class="error-text">Este é um campo obrigatório</small>
+                                                        <div class="auth-label">Endereço de E-mail</div>
+                                                        <div class="validation-icon is-success">
+                                                            <div class="icon-wrapper">
+                                                                <i data-feather="check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="validation-icon is-error">
+                                                            <div class="icon-wrapper">
+                                                                <i data-feather="x"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-12">
+                                                    <div class="control has-validation">
+                                                        <input type="text" class="input">
+                                                        <small class="error-text">Este é um campo obrigatório</small>
+                                                        <div class="auth-label">CPF</div>
+                                                        <div class="validation-icon is-success">
+                                                            <div class="icon-wrapper">
+                                                                <i data-feather="check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="validation-icon is-error">
+                                                            <div class="icon-wrapper">
+                                                                <i data-feather="x"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="control is-agree">
+                                                <span>Ao continuar você concorda com os nossos <a href="#">Termos</a> e
+                                                    <a href="#">Privacidade</a></span>
+                                            </div>
+
+                                            <div class="button-wrap has-help">
+                                                <button id="confirm-step-1" type="button"
+                                                    class="button h-button is-big is-rounded is-primary is-bold is-fullwidth">Continuar</button>
+                                                <span>Ou <a href="/login.html">Login</a> uma conta.</span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div id="signup-step-2" class="columns signup-columns is-hidden">
+                                <div class="column is-8 is-offset-2">
+                                    <div class="signup-profile-wrapper">
+                                        <h1 class="title is-5 signup-title has-text-centered">Adicione uma foto de
+                                            perfil</h1>
+                                        <h2 class="subtitle signup-subtitle has-text-centered">Essa é sua identidade
+                                            visual
+                                        </h2>
+                                        <div class="picture-selector">
+                                            <div class="image-container">
+                                                <img src="assets/img/avatars/avatar.png" alt="">
+                                                <div class="upload-button modal-trigger" role="button"
+                                                    data-modal="upload-modal">
+                                                    <i data-feather="plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-container">
+                                        <div class="divider">
+                                            <span>Ou selecione um avatar</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-carousel resized-mobile">
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/avatar.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-2.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-3.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-4.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-5.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-6.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-7.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-8.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-9.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-10.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-11.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://via.placeholder.com/150x150"
+                                                    data-demo-src="assets/img/avatars/svg/avatar-12.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-wrap is-centered has-text-centered">
+                                        <button id="confirm-step-2" type="button"
+                                            class="button h-button is-primary is-big is-rounded is-lower">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div id="signup-step-3" class="columns signup-columns is-hidden">
+                                <div class="column is-4 is-offset-4 username-form">
+                                    <h1 class="title is-5 signup-title has-text-centered">Escolha um nome de usuário
+                                    </h1>
+                                    <h2 class="subtitle signup-subtitle has-text-centered">Seu nome de usuário é como os
+                                        outros vão te encontrar
+                                        na Infinite, então escolha um bom. Você pode alterá-lo mais tarde.</h2>
+                                    <form class="signup-form">
+                                        <div class="columns is-multiline">
+                                            <div class="column is-12">
+                                                <div class="control has-validation">
+                                                    <input type="text" class="input">
+                                                    <small class="error-text">Este é um campo obrigatório</small>
+                                                    <div class="auth-label">Username</div>
+                                                    <div class="validation-icon is-success">
+                                                        <div class="icon-wrapper">
+                                                            <i data-feather="check"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="validation-icon is-error">
+                                                        <div class="icon-wrapper">
+                                                            <i data-feather="x"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column is-12">
+                                                <div class="control has-validation">
+                                                    <input type="text" class="input">
+                                                    <small class="error-text">Este é um campo obrigatório</small>
+                                                    <div class="auth-label">Senha</div>
+                                                    <div class="validation-icon is-success">
+                                                        <div class="icon-wrapper">
+                                                            <i data-feather="check"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="validation-icon is-error">
+                                                        <div class="icon-wrapper">
+                                                            <i data-feather="x"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column is-12">
+                                                <div class="control has-validation">
+                                                    <input type="text" class="input">
+                                                    <small class="error-text">Este é um campo obrigatório</small>
+                                                    <div class="auth-label">Confirmar Senha</div>
+                                                    <div class="validation-icon is-success">
+                                                        <div class="icon-wrapper">
+                                                            <i data-feather="check"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="validation-icon is-error">
+                                                        <div class="icon-wrapper">
+                                                            <i data-feather="x"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column is-12">
+                                                <div class="control has-switch">
+                                                    <span>Envie-me e-mails de marketing e transações</span>
+                                                    <label class="form-switch ml-auto">
+                                                        <input type="checkbox" id="signup-toggle" class="is-switch">
+                                                        <i></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="button-wrap is-centered has-text-centered">
+                                            <button id="finish-signup" type="button"
+                                                class="button h-button is-big is-rounded is-primary is-lower">Concluir</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- upload modal -->
+            <div id="upload-modal" class="modal modal-sm upload-signup-modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <div class="h-modal">
+                        <div class="h-modal-card">
+                            <div class="upload-demo-wrap">
+                                <div class="filepond-profile-wrap">
+                                    <input type="file" class="signup-filepond is-block mx-auto" name="signup_filepond"
+                                        accept="image/png, image/jpeg, image/gif">
+                                </div>
+                            </div>
+
+                            <div class="has-text-centered py-4">
+                                <small class="help-text">Carregue uma foto de perfil (1:1 ratio)</small>
+                            </div>
+
+                            <div class="actions">
+                                <div class="buttons is-centered">
+                                    <button class="button h-button is-big is-outlined modal-dismiss">Cancelar</button>
+                                    <button id="signup-profile-upload"
+                                        class="button h-button is-primary is-big modal-dismiss is-disabled">Confirmar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- upload modal -->
+        </div>
+
+        <!--INFINITECRED Scripts-->
+        <!-- Concatenated plugins -->
+        <script src="assets/js/app.js"></script>
+
+        <!-- INFINITECRED js -->
+        <script src="assets/js/functions.js"></script>
+        <script src="assets/js/auth.js"></script>
+    </div>
+</body>
+
+</html>

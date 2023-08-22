@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>INFINITECRED :: Checkout</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N8ZNRQ9');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Core CSS -->
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet" />
+
+    <!--Mapbox styles-->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8ZNRQ9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="infinite-app" class="app-wrapper">
+        <div class="app-overlay"></div>
+
+        <!--Full pageloader-->
+        <!-- Pageloader -->
+        <div class="pageloader is-full"></div>
+        <div class="infraloader is-full is-active"></div>
+        <!--Mobile navbar-->
+        <nav class="navbar mobile-navbar no-shadow is-hidden-desktop is-hidden-tablet" aria-label="main navigation">
+            <div class="container">
+                <!-- Brand -->
+                <div class="navbar-brand">
+                    <!-- Mobile menu toggler icon -->
+                    <div class="brand-start">
+                        <div class="navbar-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <a class="navbar-item is-brand" href="./dashboard.html">
+                        <img class="light-image" src="assets/img/logos/logo.svg" alt="">
+                        <img class="dark-image" src="assets/img/logos/logo/logo-light.svg" alt="">
+                    </a>
+
+                    <div class="brand-end">
+
+                        <div class="dropdown is-right is-spaced dropdown-trigger user-dropdown">
+                            <div class="is-trigger" aria-haspopup="true">
+                                <div class="profile-avatar">
+                                    <img class="avatar" src="./assets/img/avatars/avatar.png" alt="">
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-head">
+                                        <div class="h-avatar is-large">
+                                            <img class="avatar" src="https://via.placeholder.com/150x150" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>Erik Kovalsky</span>
+                                            <span>Cliente</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="dropdown-item is-media">
+                                        <div class="icon">
+                                            <i class="lnil lnil-user-alt"></i>
+                                        </div>
+                                        <div class="meta">
+                                            <span>Perfil</span>
+                                            <span>Visualizar perfil</span>
+                                        </div>
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item is-media">
+                                        <div class="icon">
+                                            <i class="lnil lnil-cog"></i>
+                                        </div>
+                                        <div class="meta">
+                                            <span>Configurações</span>
+                                            <span>Configurações da conta</span>
+                                        </div>
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <div class="dropdown-item is-button">
+                                        <button class="button h-button is-primary is-raised is-fullwidth logout-button">
+                                            <span class="icon is-small">
+                                                <i data-feather="log-out"></i>
+                                            </span>
+                                            <span>Sair</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!--Mobile sidebar-->
+        <div class="mobile-main-sidebar">
+            <div class="inner">
+                <ul class="icon-side-menu">
+                    <li>
+                        <a href="/dashboard.html" id="home-sidebar-menu-mobile">
+                            <i data-feather="activity"></i>
+                            <span>Principal</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dados.html" id="layouts-sidebar-menu-mobile">
+                            <i data-feather="grid"></i>
+                            <span>Dados</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./withdraw.html" id="elements-sidebar-menu-mobile">
+                            <i data-feather="box"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/clientes.html" id="components-sidebar-menu-mobile">
+                            <i data-feather="cpu"></i>
+                            <span>Clientes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="open-messages-mobile">
+                            <i data-feather="message-circle"></i>
+                            <span>Suporte</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Webapp navbar regular-->
+        <div class="webapp-navbar">
+            <div class="webapp-navbar-inner">
+                <div class="left">
+                    <a href="./dashboard.html" class="brand">
+                        <img class="light-image" src="assets/img/logos/logo.svg" alt="" />
+                        <img class="dark-image" src="assets/img/logos/logo/logo-light.svg" alt="" />
+                    </a>
+                    <div class="separator"></div>
+                    <h1 id="webapp-page-title" class="title is-5">Bem-vindo(a)</h1>
+                </div>
+                <div class="center">
+                    <div id="webapp-navbar-menu" class="centered-links">
+                        <a href="./dashboard.html" id="dashboards-navbar-menu"
+                            class="centered-link centered-link-toggle" data-menu-id="dashboards-webapp-menu">
+                            <i data-feather="activity"></i>
+                            <span>Principal</span>
+                        </a>
+                        <a href="./dados.html" id="layouts-navbar-menu" class="centered-link centered-link-toggle"
+                            data-menu-id="layouts-webapp-menu">
+                            <i data-feather="grid"></i>
+                            <span>Dados</span>
+                        </a>
+                        <a href="./withdraw.html" id="elements-navbar-menu" class="centered-link centered-link-toggle"
+                            data-menu-id="elements-webapp-menu">
+                            <i data-feather="pie-chart"></i>
+                            <span>Financeiro</span>
+                        </a>
+                        <a href="./clientes.html" id="components-navbar-menu" class="centered-link centered-link-toggle"
+                            data-menu-id="components-webapp-menu">
+                            <i data-feather="users"></i>
+                            <span>Clientes</span>
+                        </a>
+                        <a href="#" class="centered-link">
+                            <i data-feather="message-circle"></i>
+                            <span>Suporte</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="dropdown profile-dropdown dropdown-trigger is-spaced is-right">
+                        <img src="https://via.placeholder.com/150x150" alt="">
+                        <span class="status-indicator"></span>
+
+                        <div class="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <div class="dropdown-head">
+                                    <div class="h-avatar is-large">
+                                        <img class="avatar" src="https://via.placeholder.com/150x150" alt="">
+                                    </div>
+                                    <div class="meta">
+                                        <span>Erik Kovalsky</span>
+                                        <span>Cliente</span>
+                                    </div>
+                                </div>
+                                <a href="./dados.html" class="dropdown-item is-media">
+                                    <div class="icon">
+                                        <i class="lnil lnil-user-alt"></i>
+                                    </div>
+                                    <div class="meta">
+                                        <span>Perfil</span>
+                                        <span>Visualizar perfil</span>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="./configuracao.html" class="dropdown-item is-media">
+                                    <div class="icon">
+                                        <i class="lnil lnil-cog"></i>
+                                    </div>
+                                    <div class="meta">
+                                        <span>Configurações</span>
+                                        <span>Configurações da conta</span>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <div class="dropdown-item is-button">
+                                    <button class="button h-button is-primary is-raised is-fullwidth logout-button">
+                                        <span class="icon is-small">
+                                            <i data-feather="log-out"></i>
+                                        </span>
+                                        <span>Sair</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Page body-->
+        <!-- Content Wrapper -->
+        <div id="form-layout-3" class="view-wrapper is-webapp" data-page-title="Checkout" data-naver-offset="150"
+            data-menu-item="#dashboards-navbar-menu" data-mobile-item="#home-sidebar-menu-mobile">
+            <div class="page-content-wrapper">
+                <div class="page-content is-relative">
+
+                    <div class="page-title has-text-centered is-webapp">
+
+                        <div class="title-wrap">
+                            <h1 class="title is-4">Checkout</h1>
+                        </div>
+                    </div>
+
+                    <div class="page-content-inner">
+
+                        <!--Form Layout 3-->
+                        <div class="form-layout is-separate">
+                            <div class="form-outer">
+                                <div class="form-body">
+                                    <div class="form-section">
+                                        <div class="form-section-inner has-padding-bottom">
+                                            <h3 class="has-text-centered">Informações de Pagamento</h3>
+                                            <div class="columns is-multiline">
+                                                <div class="column is-6">
+                                                    <div class="field">
+                                                        <label>Nome</label>
+                                                        <div class="control has-icon">
+                                                            <input type="text" class="input" placeholder="">
+                                                            <div class="form-icon">
+                                                                <i data-feather="user"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-6">
+                                                    <div class="field">
+                                                        <label>Sobrenome</label>
+                                                        <div class="control has-icon">
+                                                            <input type="text" class="input" placeholder="">
+                                                            <div class="form-icon">
+                                                                <i data-feather="user"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-12">
+                                                    <div class="field">
+                                                        <label>E-mail</label>
+                                                        <div class="control has-icon">
+                                                            <input type="text" class="input" placeholder="">
+                                                            <div class="form-icon">
+                                                                <i data-feather="mail"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-12">
+                                                    <div class="field">
+                                                        <label>Street</label>
+                                                        <div class="control has-icon">
+                                                            <input type="text" class="input" placeholder="">
+                                                            <div class="form-icon">
+                                                                <i data-feather="map-pin"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-6">
+                                                    <div class="field">
+                                                        <label>City</label>
+                                                        <div class="control has-icon">
+                                                            <input type="text" class="input" placeholder="">
+                                                            <div class="form-icon">
+                                                                <i data-feather="map-pin"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-6">
+                                                    <div class="field">
+                                                        <label>Country</label>
+                                                        <div class="control is-combo">
+                                                            <div class="image-combo-box has-rounded-images">
+                                                                <div class="box-inner">
+                                                                    <div class="combo-item">
+                                                                        <img src="https://via.placeholder.com/150x150"
+                                                                            alt="">
+                                                                        <span class="selected-item">Select a
+                                                                            country</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="box-chevron">
+                                                                    <i data-feather="chevron-down"></i>
+                                                                </div>
+                                                                <div class="box-dropdown">
+                                                                    <div class="dropdown-inner has-slimscroll">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <span class="item-icon">
+                                                                                    <img src="https://via.placeholder.com/150x150"
+                                                                                        alt="">
+                                                                                </span>
+                                                                                <span class="item-name">United
+                                                                                    States</span>
+                                                                                <span class="checkmark">
+                                                                                    <i data-feather="check"></i>
+                                                                                </span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="item-icon">
+                                                                                    <img src="https://via.placeholder.com/150x150"
+                                                                                        alt="">
+                                                                                </span>
+                                                                                <span class="item-name">Germany</span>
+                                                                                <span class="checkmark">
+                                                                                    <i data-feather="check"></i>
+                                                                                </span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="item-icon">
+                                                                                    <img src="https://via.placeholder.com/150x150"
+                                                                                        alt="">
+                                                                                </span>
+                                                                                <span class="item-name">France</span>
+                                                                                <span class="checkmark">
+                                                                                    <i data-feather="check"></i>
+                                                                                </span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span class="item-icon">
+                                                                                    <img src="https://via.placeholder.com/150x150"
+                                                                                        alt="">
+                                                                                </span>
+                                                                                <span class="item-name">England</span>
+                                                                                <span class="checkmark">
+                                                                                    <i data-feather="check"></i>
+                                                                                </span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-12">
+                                                    <div class="field">
+                                                        <label>Phone</label>
+                                                        <div class="control has-icon">
+                                                            <input type="text" class="input" placeholder="">
+                                                            <div class="form-icon">
+                                                                <i data-feather="phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-section">
+                                        <div class="form-section-inner">
+                                            <h3 class="has-text-centered">Delivery</h3>
+                                            <div class="columns is-multiline">
+                                                <div class="column is-12">
+                                                    <div class="field">
+                                                        <label>Delivery Fee</label>
+                                                        <div class="control">
+                                                            <div class="radio-boxes">
+                                                                <div class="radio-box">
+                                                                    <input type="radio" name="delivery_type">
+                                                                    <div class="radio-box-inner">
+                                                                        <div class="fee">
+                                                                            <span>R$ 999,00</span>
+                                                                        </div>
+                                                                        <p>BASIC</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="radio-box">
+                                                                    <input type="radio" name="delivery_type" checked>
+                                                                    <div class="radio-box-inner">
+                                                                        <div class="fee">
+                                                                            <span>R$ 1.500,00</span>
+                                                                        </div>
+                                                                        <p>STANDARD</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="radio-boxes">
+                                                                <div class="radio-box">
+                                                                    <input type="radio" name="delivery_type" checked>
+                                                                    <div class="radio-box-inner">
+                                                                        <div class="fee">
+                                                                            <span>R$ 2.500,00</span>
+                                                                        </div>
+                                                                        <p>BUSINESS</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <p>
+                                                                <span>Estimated delivery date: <span>Oct
+                                                                        23</span></span>
+                                                                <span>Each package has a tracking number</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-section-outer">
+                                            <div class="checkboxes">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <label class="checkbox is-circle">
+                                                            <input type="checkbox" checked>
+                                                            <span></span>
+                                                            Create an account
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <label class="checkbox is-circle">
+                                                            <input type="checkbox">
+                                                            <span></span>
+                                                            Subscribe to our Newsletter
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="button-wrap">
+                                                <button
+                                                    class="button h-button is-primary is-bold is-raised is-fullwidth">Confirm
+                                                    My
+                                                    Order</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--INFINITECRED Scripts-->
+        <!--Load Mapbox-->
+
+        <!-- Concatenated plugins -->
+        <script src="assets/js/app.js"></script>
+
+        <!-- INFINITECRED js -->
+        <script src="assets/js/functions.js"></script>
+        <script src="assets/js/main.js" async></script>
+        <script src="assets/js/components.js" async></script>
+        <script src="assets/js/popover.js" async></script>
+        <script src="assets/js/widgets.js" async></script>
+
+
+        <!-- Additional Features -->
+        <script src="assets/js/touch.js" async></script>
+
+        <!-- Landing page js -->
+
+        <!-- Dashboards js -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Charts js -->
+
+
+
+        <!--Forms-->
+
+        <!--Wizard-->
+
+        <!-- Layouts js -->
+
+
+
+
+
+
+
+
+
+
+
+        <script src="assets/js/syntax.js" async></script>
+    </div>
+</body>
+
+</html>
